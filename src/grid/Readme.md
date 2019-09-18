@@ -4,6 +4,24 @@ For more information on these components, view this project on GitHub: [https://
 
 Resize your browser or load on different devices to test the grid system.
 
+### Example: Custom grid columns param
+
+```
+<Container fluid style={{ lineHeight: '32px' }} gridColumns={13}>
+  <Row debug>
+    <Col lg={7} debug>1 of 2</Col>
+    <Col lg={6} debug>2 of 2</Col>
+  </Row>
+  <br />
+  <Row debug>
+    <Col debug>1 of 3</Col>
+    <Col debug>2 of 3</Col>
+    <Col debug>3 of 3</Col>
+  </Row>
+</Container>
+```
+
+
 ### Example: Equal-width
 
 ```
