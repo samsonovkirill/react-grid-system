@@ -1,4 +1,4 @@
-declare module 'react-grid-system' {
+declare module 'react-grid-custom' {
     import * as React from 'react';
 
     type Align = 'normal' | 'start' | 'center' | 'end' | 'stretch'
@@ -50,7 +50,8 @@ declare module 'react-grid-system' {
         xl?: boolean
         fluid?: boolean,
         style?: object,
-        component?: () => string | string
+        component?: () => string | string,
+        gridColumns?: number,
     }
 
     type RowProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
