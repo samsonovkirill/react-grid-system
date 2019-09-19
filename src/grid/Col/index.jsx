@@ -88,10 +88,15 @@ export default class Col extends React.PureComponent {
      * Use your own component
      */
     component: PropTypes.elementType,
+    /**
+     * Default size of column without adaptive
+     */
+    size: PropTypes.number,
   };
 
   static defaultProps = {
     children: null,
+    size: null,
     xs: null,
     sm: null,
     md: null,
@@ -108,6 +113,7 @@ export default class Col extends React.PureComponent {
   renderCol = (gutterWidth, screenClass, gridColumns) => {
     const {
       children,
+      size,
       xs,
       sm,
       md,
@@ -123,7 +129,7 @@ export default class Col extends React.PureComponent {
     } = this.props;
     const theStyle = getStyle({
       width: {
-        xs,
+        xs: xs || size,
         sm,
         md,
         lg,

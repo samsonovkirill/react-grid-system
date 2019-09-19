@@ -30,6 +30,7 @@ declare module 'react-grid-custom' {
 
     type ColProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
         debug?: boolean,
+        size?: number,
         xs?: number,
         sm?: number,
         md?: number,
